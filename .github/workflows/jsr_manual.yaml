@@ -10,7 +10,7 @@ jobs:
     name: Prereqs
     runs-on: ubuntu-24.04
     steps:
-      - uses: StyraInc/styra-init-action@main # ratchet:exclude
+      - uses: StyraOSS/styra-init-action@main # ratchet:exclude
 
   jsr:
     name: Publish @styra/opa to JSR
