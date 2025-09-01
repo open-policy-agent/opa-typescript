@@ -1,14 +1,12 @@
 {
   "$schema": "https://typedoc.org/schema.json",
   "entryPoints": ["packages/*"],
-  "name": "Styra TypeScript Packages",
+  "name": "Open Policy Agent TypeScript Packages",
   "entryPointStrategy": "packages",
   "includeVersion": false,
-  "favicon": ".typedoc/favicon.ico",
   "hideGenerator": true,
   "navigationLinks": {
-    "Styra OPA SDKs": "https://docs.styra.com/sdk/",
-    "GitHub": "https://github.com/StyraInc/opa-typescript"
+    "GitHub": "https://github.com/open-policy-agent/opa-typescript"
   },
   "plugin": ["typedoc-plugin-replace-text", "typedoc-plugin-extras"]
 }

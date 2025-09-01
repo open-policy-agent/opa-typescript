@@ -3,8 +3,7 @@ module.exports = {
   out: "output",
   hideGenerator: true,
   navigationLinks: {
-    "Styra OPA SDKs": "https://docs.styra.com/sdk/",
-    NPM: "https://www.npmjs.com/package/@styra/opa",
+    NPM: "https://www.npmjs.com/package/@open-policy-agent/opa",
     GitHub: "https://github.com/StyraInc/opa-typescript",
   },
   entryPoints: [
@@ -30,7 +29,7 @@ module.exports = {
       {
         // this captures all links to speakeasy's generated docs
         pattern: "docs/sdks/opaapiclient/README\\.md",
-        replace: "../classes/_styra_opa.sdk.OpaApiClient.html",
+        replace: "../classes/_open-policy-agent_opa.sdk.OpaApiClient.html",
       },
       { pattern: "#executepolicy\\)", replace: "#executePolicy)" },
       {
@@ -49,7 +48,7 @@ module.exports = {
         pattern:
           "For supported JavaScript runtimes, please consult \\[RUNTIMES\\.md\\]\\(RUNTIMES\\.md\\)\\.",
         replace:
-          "See [the repository docs](https://github.com/StyraInc/opa-typescript/blob/main/packages/opa/RUNTIMES.md) for supported JavaScript runtimes.",
+          "See [the repository docs](https://github.com/open-policy-agent/opa-typescript/blob/main/packages/opa/RUNTIMES.md) for supported JavaScript runtimes.",
       },
     ],
   },
