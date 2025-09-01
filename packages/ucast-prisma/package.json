@@ -1,12 +1,12 @@
 {
-  "name": "@styra/ucast-prisma",
+  "name": "@open-policy-agent/ucast-prisma",
   "version": "0.1.5",
   "repository": {
     "type": "git",
-    "url": "https://github.com/StyraInc/opa-typescript.git",
+    "url": "https://github.com/open-policy-agent/opa-typescript.git",
     "directory": "packages/ucast-prisma"
   },
-  "description": "Styra-supported interpreter for using ucast conditions with Prisma.",
+  "description": "Interpreter for using ucast conditions with Prisma.",
   "scripts": {
     "clean": "rm -rf ./dist/*",
     "build": "tshy",
@@ -19,7 +19,7 @@
     "dist",
     "src"
   ],
-  "author": "Styra Inc.",
+  "author": "The OPA Authors",
   "license": "Apache-2.0",
   "devDependencies": {
     "@types/lodash.merge": "^4.6.9",
