@@ -5,7 +5,7 @@ Provenance information can be requested on individual API calls and are returned
 ## Example Usage
 
 ```typescript
-import { Provenance } from "@styra/opa/sdk/models/components";
+import { Provenance } from "@open-policy-agent/opa/sdk/models/components";
 
 let value: Provenance = {};
 ```

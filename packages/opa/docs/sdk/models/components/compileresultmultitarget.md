@@ -5,7 +5,7 @@ The partially evaluated result of the query, for each target dialect. Result wil
 ## Example Usage
 
 ```typescript
-import { CompileResultMultitarget } from "@styra/opa/sdk/models/components";
+import { CompileResultMultitarget } from "@open-policy-agent/opa/sdk/models/components";
 
 let value: CompileResultMultitarget = {};
 ```

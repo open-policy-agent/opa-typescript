@@ -62,8 +62,6 @@ jobs:
           npm run build --ws
       - name: test
         run: npx -w ${{ matrix.pkg }} tsx --test ./tests/**/*.ts
-        env:
-          EOPA_LICENSE_KEY: ${{ secrets.EOPA_LICENSE_KEY }} # @styra/opa needs this
         if: matrix.pkg == 'packages/opa'
       - name: test
         run: npm run -w ${{ matrix.pkg }} --if-present test

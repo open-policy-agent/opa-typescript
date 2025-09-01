@@ -3,7 +3,7 @@
 ## Example Usage
 
 ```typescript
-import { SuccessfulPolicyResponseWithStatusCode } from "@styra/opa/sdk/models/components";
+import { SuccessfulPolicyResponseWithStatusCode } from "@open-policy-agent/opa/sdk/models/components";
 
 let value: SuccessfulPolicyResponseWithStatusCode = {
   httpStatusCode: "200",

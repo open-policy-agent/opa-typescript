@@ -5,7 +5,7 @@ OPA service is not healthy. If the bundles option is specified this can mean any
 ## Example Usage
 
 ```typescript
-import { UnhealthyServer } from "@styra/opa/sdk/models/errors";
+import { UnhealthyServer } from "@open-policy-agent/opa/sdk/models/errors";
 
 // No examples available for this model
 ```

@@ -16,9 +16,9 @@
 
 ### Patch Changes
 
-- 1aed1ae: back out of 'Adapter' addition (see @styra/opa)
+- 1aed1ae: back out of 'Adapter' addition (see @open-policy-agent/opa)
 
-  This functionality is now part of @styra/opa, which automatically provides adaptation for Prisma if requested.
+  This functionality is now part of @open-policy-agent/opa, which automatically provides adaptation for Prisma if requested.
 
 ## 0.1.2
 
@@ -30,7 +30,7 @@
 
 ### Patch Changes
 
-- 3ceaab0: ucast-prisma: add missing @styra/opa dependency
+- 3ceaab0: ucast-prisma: add missing @open-policy-agent/opa dependency
 
 ## 0.1.0
 

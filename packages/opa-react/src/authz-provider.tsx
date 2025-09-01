@@ -12,8 +12,8 @@ import {
   type ToInput,
   type RequestOptions,
   type BatchRequestOptions,
-} from "@styra/opa";
-import { type ServerErrorWithStatusCode } from "@styra/opa/sdk/models/components";
+} from "@open-policy-agent/opa";
+import { type ServerErrorWithStatusCode } from "@open-policy-agent/opa/sdk/models/components";
 import { create, windowScheduler } from "@yornaath/batshit";
 
 type EvalQuery = {
@@ -70,10 +70,10 @@ const evals = (sdk: OPAClient) =>
     },
     resolver: (results, query) => results[key(query)] ?? null,
     scheduler: windowScheduler(10),
-    name: "@styra/opa-react",
+    name: "@open-policy-agent/opa-react",
   });
 
-/** Abstracts the methods that are used from `OPAClient` of `@styra/opa`. */
+/** Abstracts the methods that are used from `OPAClient` of `@open-policy-agent/opa`. */
 export interface OPAClient {
   /** Evaluate a policy at `path`, with optional `input` and `RequestOptions`. */
   evaluate<In extends Input | ToInput, Res>(
@@ -97,7 +97,7 @@ export interface OPAClient {
 }
 
 export type AuthzProviderContext = {
-  /**  The `@styra/opa` OPAClient instance to use. */
+  /**  The `@open-policy-agent/opa` OPAClient instance to use. */
   opaClient: OPAClient;
   /** Default path for every decision. Override by providing`path`. */
   defaultPath?: string;

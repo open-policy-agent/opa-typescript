@@ -1,7 +1,7 @@
 import * as React from "react";
 import { cleanup, render, screen } from "@testing-library/react";
 import Authz from "../src/authz";
-import { Result } from "@styra/opa";
+import { Result } from "@open-policy-agent/opa";
 import { describe, test, expect, vi, beforeEach, afterEach } from "vitest";
 
 // vi.mock is hoisted--even before the imports (https://vitest.dev/api/vi.html#vi-mock)

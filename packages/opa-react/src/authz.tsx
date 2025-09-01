@@ -1,7 +1,7 @@
 import { type ReactNode, type PropsWithChildren } from "react";
 
 import useAuthz from "./use-authz.js";
-import { type Input, type Result } from "@styra/opa";
+import { type Input, type Result } from "@open-policy-agent/opa";
 
 export type AuthzProps = PropsWithChildren<{
   /** Input to the policy evaluation. Will be merged with `AuthzProvider`'s `defaultInput` (if set), overriding it when in conflict. */

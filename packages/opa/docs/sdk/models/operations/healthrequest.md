@@ -3,7 +3,7 @@
 ## Example Usage
 
 ```typescript
-import { HealthRequest } from "@styra/opa/sdk/models/operations";
+import { HealthRequest } from "@open-policy-agent/opa/sdk/models/operations";
 
 let value: HealthRequest = {};
 ```

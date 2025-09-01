@@ -5,7 +5,7 @@ The partially evaluated result of the query.
 ## Example Usage
 
 ```typescript
-import { CompileResultJSONResult } from "@styra/opa/sdk/models/components";
+import { CompileResultJSONResult } from "@open-policy-agent/opa/sdk/models/components";
 
 let value: CompileResultJSONResult = {};
 ```

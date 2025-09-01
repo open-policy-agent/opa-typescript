@@ -1,6 +1,6 @@
 import { renderHook, waitFor } from "@testing-library/react";
 import { describe, it, expect, vi } from "vitest";
-import { OPAClient, type Result } from "@styra/opa";
+import { OPAClient, type Result } from "@open-policy-agent/opa";
 import {
   default as AuthzProvider,
   AuthzProviderProps,

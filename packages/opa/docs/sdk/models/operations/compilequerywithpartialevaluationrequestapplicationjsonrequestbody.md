@@ -5,7 +5,7 @@ The query, input, and other settings for partial evaluation.
 ## Example Usage
 
 ```typescript
-import { CompileQueryWithPartialEvaluationRequestApplicationJSONRequestBody } from "@styra/opa/sdk/models/operations";
+import { CompileQueryWithPartialEvaluationRequestApplicationJSONRequestBody } from "@open-policy-agent/opa/sdk/models/operations";
 
 let value: CompileQueryWithPartialEvaluationRequestApplicationJSONRequestBody =
   {

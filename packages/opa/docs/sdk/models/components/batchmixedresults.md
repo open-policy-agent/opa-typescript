@@ -5,7 +5,7 @@ Mixed success and failures.
 ## Example Usage
 
 ```typescript
-import { BatchMixedResults } from "@styra/opa/sdk/models/components";
+import { BatchMixedResults } from "@open-policy-agent/opa/sdk/models/components";
 
 let value: BatchMixedResults = {
   responses: {

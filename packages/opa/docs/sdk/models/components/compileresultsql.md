@@ -5,7 +5,7 @@ The partially evaluated result of the query, in SQL format. Result will be empty
 ## Example Usage
 
 ```typescript
-import { CompileResultSQL } from "@styra/opa/sdk/models/components";
+import { CompileResultSQL } from "@open-policy-agent/opa/sdk/models/components";
 
 let value: CompileResultSQL = {};
 ```

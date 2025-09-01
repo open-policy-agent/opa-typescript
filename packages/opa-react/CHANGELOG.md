@@ -1,10 +1,10 @@
-# @styra/opa-react
+# @open-policy-agent/opa-react
 
 ## 0.7.0
 
 ### Minor Changes
 
-- 410b448: update @styra/opa to v1.5.0
+- 410b448: update @open-policy-agent/opa to v1.5.0
 
 ## 0.6.1
 
@@ -76,7 +76,7 @@
 
 - f9d7ac2: change exported interfaces names, and AuthzProvider property
 
-  The export iterface `SDK` is now called `OPAClient` for consistency with `@styra/opa`.
+  The export iterface `SDK` is now called `OPAClient` for consistency with `@open-policy-agent/opa`.
 
   It is used in `AuthzProviderContext` and `AuthzProviderProps`, and has been renamed from `sdk` to `opaClient`.
 
@@ -95,7 +95,7 @@
   from any components wrapped into `AuthzProvider`. For example:
 
   ```tsx
-  import { AuthzContext } from "@styra/opa-react";
+  import { AuthzContext } from "@open-policy-agent/opa-react";
 
   export default function Component() {
     const { sdk } = useContext(AuthzContext);
@@ -169,9 +169,9 @@
 
 - f7eab9c: Remove default export: It seems simpler to only rely on the three exports we have:
 
-  1. `import { AuthzProvider } from "@styra/opa-react";`
-  2. `import { Authz } from "@styra/opa-react";`
-  3. `import { useAuthz } from "@styra/opa-react";`
+  1. `import { AuthzProvider } from "@open-policy-agent/opa-react";`
+  2. `import { Authz } from "@open-policy-agent/opa-react";`
+  3. `import { useAuthz } from "@open-policy-agent/opa-react";`
 
   (Besides types and interfaces.)
 
@@ -193,7 +193,7 @@
 
 - ab7c009: Fix package.json (add "browser" next to "main")
 
-  Before, create-react-app (or webpack, rather) failed to resolve @styra/opa-react.
+  Before, create-react-app (or webpack, rather) failed to resolve @open-policy-agent/opa-react.
 
 ## 0.0.1
 

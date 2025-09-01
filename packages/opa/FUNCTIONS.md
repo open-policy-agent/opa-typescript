@@ -19,9 +19,9 @@ specific category of applications.
 ## Example
 
 ```typescript
-import { OpaApiClientCore } from "@styra/opa/core.js";
-import { executeDefaultPolicyWithInput } from "@styra/opa/funcs/executeDefaultPolicyWithInput.js";
-import { SDKValidationError } from "@styra/opa/sdk/models/errors/sdkvalidationerror.js";
+import { OpaApiClientCore } from "@open-policy-agent/opa/core.js";
+import { executeDefaultPolicyWithInput } from "@open-policy-agent/opa/funcs/executeDefaultPolicyWithInput.js";
+import { SDKValidationError } from "@open-policy-agent/opa/sdk/models/errors/sdkvalidationerror.js";
 
 // Use `OpaApiClientCore` for best tree-shaking performance.
 // You can create one instance of it to use across an application.

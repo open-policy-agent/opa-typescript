@@ -5,7 +5,7 @@ UCAST JSON object describing the conditions under which the query is true.
 ## Example Usage
 
 ```typescript
-import { CompileResultMultitargetQuery } from "@styra/opa/sdk/models/components";
+import { CompileResultMultitargetQuery } from "@open-policy-agent/opa/sdk/models/components";
 
 let value: CompileResultMultitargetQuery = {};
 ```

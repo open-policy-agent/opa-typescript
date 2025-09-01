@@ -1,6 +1,6 @@
 <!-- Start SDK Example Usage [usage] -->
 ```typescript
-import { OpaApiClient } from "@styra/opa";
+import { OpaApiClient } from "@open-policy-agent/opa";
 
 const opaApiClient = new OpaApiClient();
 
@@ -16,7 +16,7 @@ run();
 ```
 
 ```typescript
-import { OpaApiClient } from "@styra/opa";
+import { OpaApiClient } from "@open-policy-agent/opa";
 
 const opaApiClient = new OpaApiClient();
 
@@ -37,7 +37,7 @@ run();
 ```
 
 ```typescript
-import { OpaApiClient } from "@styra/opa";
+import { OpaApiClient } from "@open-policy-agent/opa";
 
 const opaApiClient = new OpaApiClient();
 

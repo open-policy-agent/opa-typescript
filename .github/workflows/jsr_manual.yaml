@@ -13,7 +13,7 @@ jobs:
       - uses: StyraOSS/styra-init-action@main # ratchet:exclude
 
   jsr:
-    name: Publish @styra/opa to JSR
+    name: Publish @open-policy-agent/opa to JSR
     runs-on: ubuntu-24.04
     needs: init
     permissions:
@@ -24,7 +24,7 @@ jobs:
       - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4.4.0
         with:
           node-version: 22
-      - name: build and publish @styra/opa to JSR
+      - name: build and publish open-policy-agent/opa to JSR
         run: |
           npm ci
           npm run build --ws
