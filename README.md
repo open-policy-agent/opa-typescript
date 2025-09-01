@@ -6,7 +6,7 @@ This repository contains Open Source TypeScript packages for use with [Open Poli
 
 ## [@open-policy-agent/opa](https://www.npmjs.com/package/@open-policy-agent/opa)
 
-The Styra-supported driver to connect to Open Policy Agent (OPA) and Enterprise OPA deployments.
+Driver to connect to Open Policy Agent (OPA) and EOPA deployments.
 
 
 ## [@open-policy-agent/opa-react](https://www.npmjs.com/package/@open-policy-agent/opa-react)
