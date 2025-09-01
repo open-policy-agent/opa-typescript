@@ -3,7 +3,7 @@
 ## Example Usage
 
 ```typescript
-import { ServerErrorWithStatusCode } from "@styra/opa/sdk/models/components";
+import { ServerErrorWithStatusCode } from "@open-policy-agent/opa/sdk/models/components";
 
 let value: ServerErrorWithStatusCode = {
   httpStatusCode: "200",

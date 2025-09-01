@@ -3,7 +3,7 @@
 ## Example Usage
 
 ```typescript
-import { CompileQueryWithPartialEvaluationResponse } from "@styra/opa/sdk/models/operations";
+import { CompileQueryWithPartialEvaluationResponse } from "@open-policy-agent/opa/sdk/models/operations";
 
 let value: CompileQueryWithPartialEvaluationResponse = {
   httpMeta: {

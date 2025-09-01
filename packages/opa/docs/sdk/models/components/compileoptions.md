@@ -5,7 +5,7 @@ Additional options to use during partial evaluation. Only the disableInlining op
 ## Example Usage
 
 ```typescript
-import { CompileOptions } from "@styra/opa/sdk/models/components";
+import { CompileOptions } from "@open-policy-agent/opa/sdk/models/components";
 
 let value: CompileOptions = {};
 ```

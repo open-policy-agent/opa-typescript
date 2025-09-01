@@ -5,7 +5,7 @@ The partially evaluated result of the query as UCAST.
 ## Example Usage
 
 ```typescript
-import { CompileResultUCASTResult } from "@styra/opa/sdk/models/components";
+import { CompileResultUCASTResult } from "@open-policy-agent/opa/sdk/models/components";
 
 let value: CompileResultUCASTResult = {};
 ```

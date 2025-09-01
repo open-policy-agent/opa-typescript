@@ -1,9 +1,9 @@
-# @styra/opa-react
+# @open-policy-agent/opa-react
 
 [![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
-[![NPM Version](https://img.shields.io/npm/v/%40styra%2Fopa-react?style=flat&color=%2324b6e0)](https://www.npmjs.com/package/@styra/opa-react)
+[![NPM Version](https://img.shields.io/npm/v/%40styra%2Fopa-react?style=flat&color=%2324b6e0)](https://www.npmjs.com/package/@open-policy-agent/opa-react)
 
-This package contains helpers for using [@styra/opa](https://www.npmjs.com/package/@styra/opa) from React.
+This package contains helpers for using [@open-policy-agent/opa](https://www.npmjs.com/package/@open-policy-agent/opa) from React.
 
 ## Features
 
@@ -16,13 +16,13 @@ This package contains helpers for using [@styra/opa](https://www.npmjs.com/packa
 ### npm
 
 ```shell
-npm install @styra/opa-react
+npm install @open-policy-agent/opa-react
 ```
 
 ### yarn
 
 ```shell
-yarn add @styra/opa-react
+yarn add @open-policy-agent/opa-react
 ```
 
 ## Scaffolding: `<AuthzProvider>`
@@ -33,8 +33,8 @@ The simplest way to make that happen is to wrap your `<App>` into `<AuthzProvide
 Add these imports to the file that defines your `App` function:
 
 ```js
-import { AuthzProvider } from "@styra/opa-react";
-import { OPAClient } from "@styra/opa";
+import { AuthzProvider } from "@open-policy-agent/opa-react";
+import { OPAClient } from "@open-policy-agent/opa";
 ```
 
 Then instantiate an `OPAClient` that is able to reach your OPA server, and pass that along to `<AuthzProvider>`:

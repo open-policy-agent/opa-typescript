@@ -7,7 +7,7 @@ The server also returns 200 if the path refers to an undefined document. In this
 ## Example Usage
 
 ```typescript
-import { SuccessfulPolicyResponse } from "@styra/opa/sdk/models/components";
+import { SuccessfulPolicyResponse } from "@open-policy-agent/opa/sdk/models/components";
 
 let value: SuccessfulPolicyResponse = {
   result: {

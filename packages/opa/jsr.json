@@ -1,7 +1,7 @@
 
 
 {
-  "name": "@styra/opa",
+  "name": "@open-policy-agent/opa",
   "version": "1.7.10",
   "exports": {
     ".": "./src/index.ts",    

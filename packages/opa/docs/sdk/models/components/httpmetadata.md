@@ -3,7 +3,7 @@
 ## Example Usage
 
 ```typescript
-import { HTTPMetadata } from "@styra/opa/sdk/models/components";
+import { HTTPMetadata } from "@open-policy-agent/opa/sdk/models/components";
 
 let value: HTTPMetadata = {
   response: new Response("{\"message\": \"hello world\"}", {

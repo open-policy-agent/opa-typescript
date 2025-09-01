@@ -7,7 +7,7 @@ The server also returns 200 if the path refers to an undefined document. In this
 ## Example Usage
 
 ```typescript
-import { BatchSuccessfulPolicyEvaluation } from "@styra/opa/sdk/models/components";
+import { BatchSuccessfulPolicyEvaluation } from "@open-policy-agent/opa/sdk/models/components";
 
 let value: BatchSuccessfulPolicyEvaluation = {
   batchDecisionId: "1bef6b7d-cd13-4890-bfe1-fd2e8de32189",

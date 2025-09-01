@@ -1,6 +1,6 @@
 import { useContext, useMemo } from "react";
 import { AuthzContext } from "./authz-provider.js";
-import { type Input, type Result } from "@styra/opa";
+import { type Input, type Result } from "@open-policy-agent/opa";
 import merge from "lodash.merge";
 import { useQuery, useQueries, UseQueryResult } from "@tanstack/react-query";
 

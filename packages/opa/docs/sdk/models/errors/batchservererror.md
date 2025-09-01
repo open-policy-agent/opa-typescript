@@ -6,7 +6,7 @@ Server Error. All requests returned a 500 error.
 ## Example Usage
 
 ```typescript
-import { BatchServerError } from "@styra/opa/sdk/models/errors";
+import { BatchServerError } from "@open-policy-agent/opa/sdk/models/errors";
 
 // No examples available for this model
 ```

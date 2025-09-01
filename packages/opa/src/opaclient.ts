@@ -1,4 +1,4 @@
-import { MaskRule, mask, ucastToPrisma } from "@styra/ucast-prisma";
+import { MaskRule, mask, ucastToPrisma } from "@open-policy-agent/ucast-prisma";
 import { SDKOptions } from "./lib/config.js";
 import { HTTPClient } from "./lib/http.js";
 import { RequestOptions as FetchOptions } from "./lib/sdks.js";

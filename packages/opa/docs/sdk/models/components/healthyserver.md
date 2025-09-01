@@ -5,7 +5,7 @@ OPA service is healthy. If the bundles option is specified then all configured b
 ## Example Usage
 
 ```typescript
-import { HealthyServer } from "@styra/opa/sdk/models/components";
+import { HealthyServer } from "@open-policy-agent/opa/sdk/models/components";
 
 let value: HealthyServer = {};
 ```

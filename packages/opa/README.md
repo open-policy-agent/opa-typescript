@@ -3,8 +3,8 @@
 The Styra-supported driver to connect to Open Policy Agent (OPA) and Enterprise OPA deployments.
 
 [![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
-[![NPM Version](https://img.shields.io/npm/v/%40styra%2Fopa?style=flat&color=%2324b6e0)](https://www.npmjs.com/package/@styra/opa)
-[![JSR](https://jsr.io/badges/@styra/opa)](https://jsr.io/@styra/opa)
+[![NPM Version](https://img.shields.io/npm/v/%40styra%2Fopa?style=flat&color=%2324b6e0)](https://www.npmjs.com/package/@open-policy-agent/opa)
+[![JSR](https://jsr.io/badges/@open-policy-agent/opa)](https://jsr.io/@open-policy-agent/opa)
 
 > Reference documentation available at <https://styrainc.github.io/opa-typescript>
 
@@ -15,25 +15,25 @@ You can use the Styra OPA SDK to connect to [Open Policy Agent](https://www.open
 ### NPM
 
 ```bash
-npm add @styra/opa
+npm add @open-policy-agent/opa
 ```
 
 ### PNPM
 
 ```bash
-pnpm add @styra/opa
+pnpm add @open-policy-agent/opa
 ```
 
 ### Bun
 
 ```bash
-bun add @styra/opa
+bun add @open-policy-agent/opa
 ```
 
 ### Yarn
 
 ```bash
-yarn add @styra/opa zod
+yarn add @open-policy-agent/opa zod
 
 # Note that Yarn does not install peer dependencies automatically. You will need
 # to install zod as shown above.
@@ -96,7 +96,7 @@ and this data:
 For a simple boolean response without input, use the SDK as follows:
 
 ```ts
-import { OPAClient } from "@styra/opa";
+import { OPAClient } from "@open-policy-agent/opa";
 const serverURL = "http://localhost:8181";
 const opa = new OPAClient(serverURL);
 const path = "authz/allow";
@@ -110,7 +110,7 @@ console.log(allowed ? "allowed!" : "denied!");
 For evaluating the default rule (configured with your OPA service), use `evaluateDefault`. `input` is optional, and left out in this example:
 
 ```ts
-import { OPAClient } from "@styra/opa";
+import { OPAClient } from "@open-policy-agent/opa";
 const serverURL = "http://localhost:8181";
 const opa = new OPAClient(serverURL);
 
@@ -123,7 +123,7 @@ console.log(allowed ? "allowed!" : "denied!");
 Input is provided as a second (optional) argument to `evaluate`:
 
 ```ts
-import { OPAClient } from "@styra/opa";
+import { OPAClient } from "@open-policy-agent/opa";
 const serverURL = "http://localhost:8181";
 const opa = new OPAClient(serverURL);
 const path = "authz/allow";
@@ -138,7 +138,7 @@ console.log(allowed ? "allowed!" : "denied!");
 Input is provided as an (optional) argument to `evaluateDefault`:
 
 ```ts
-import { OPAClient } from "@styra/opa";
+import { OPAClient } from "@open-policy-agent/opa";
 const serverURL = "http://localhost:8181";
 const opa = new OPAClient(serverURL);
 
@@ -156,7 +156,7 @@ It's possible to provide your own types for input and results.
 The `evaluate` function will then return a typed result, and TypeScript will ensure that you pass the proper types (as declared) to `evaluated`.
 
 ```ts
-import { OPAClient } from "@styra/opa";
+import { OPAClient } from "@open-policy-agent/opa";
 const serverURL = "http://localhost:8181";
 const opa = new OPAClient(serverURL);
 const path = "authz";
@@ -175,7 +175,7 @@ console.log(result);
 If you pass in an arbitrary object as input, it'll be stringified (`JSON.stringify`):
 
 ```ts
-import { OPAClient } from "@styra/opa";
+import { OPAClient } from "@open-policy-agent/opa";
 const serverURL = "http://localhost:8181";
 const opa = new OPAClient(serverURL);
 const path = "authz/allow";
@@ -195,7 +195,7 @@ console.log(allowed);
 You can control the input that's constructed from an object by implementing `ToInput`:
 
 ```ts
-import { OPAClient, ToInput } from "@styra/opa";
+import { OPAClient, ToInput } from "@open-policy-agent/opa";
 const serverURL = "http://localhost:8181";
 const opa = new OPAClient(serverURL);
 const path = "authz/allow";
@@ -243,7 +243,7 @@ response.details contains "input.b is OK" if input.b in good_b
 you can turn it into a boolean result like this:
 
 ```ts
-import { OPAClient } from "@styra/opa";
+import { OPAClient } from "@open-policy-agent/opa";
 const serverURL = "http://localhost:8181";
 const opa = new OPAClient(serverURL);
 const path = "authz/response";
@@ -262,7 +262,7 @@ console.log(allowed);
 ### Batched Queries
 
 ```ts
-import { OPAClient } from "@styra/opa";
+import { OPAClient } from "@open-policy-agent/opa";
 
 const serverURL = "http://localhost:8181";
 const path = "authz/allow";
@@ -309,7 +309,7 @@ masks.fruits.supplier.replace.value := "<supplier>"
 ### For Prisma
 
 ```ts
-import { OPAClient } from "@styra/opa";
+import { OPAClient } from "@open-policy-agent/opa";
 const serverURL = "http://localhost:8181";
 const opa = new OPAClient(serverURL);
 const path = "filters/include";
@@ -342,7 +342,7 @@ const fruits = (
 ### For SQL
 
 ```ts
-import { OPAClient } from "@styra/opa";
+import { OPAClient } from "@open-policy-agent/opa";
 const serverURL = "http://localhost:8181";
 const opa = new OPAClient(serverURL);
 const path = "filters/include";
@@ -387,7 +387,7 @@ WHERE f.col IN (E'red', E'green')
 ### For multiple data sources
 
 ```ts
-import { OPAClient } from "@styra/opa";
+import { OPAClient } from "@open-policy-agent/opa";
 const serverURL = "http://localhost:8181";
 const opa = new OPAClient(serverURL);
 const path = "filters/include";
@@ -435,7 +435,7 @@ This produces an object keyed by the requested targets:
 You can provide your custom headers -- for example for bearer authorization -- via an option argument to the `OPAClient` constructor.
 
 ```ts
-import { OPAClient } from "@styra/opa";
+import { OPAClient } from "@open-policy-agent/opa";
 const serverURL = "http://localhost:8181";
 const opa = new OPAClient(serverURL, { headers: { authorization: "Bearer opensesame" } });
 const path = "authz/allow";
@@ -448,8 +448,8 @@ console.log(allowed);
 You can supply an instance of `HTTPClient` to supply your own hooks, for example to examine the request sent to OPA:
 
 ```ts
-import { OPAClient } from "@styra/opa";
-import { HTTPClient } from "@styra/opa/lib/http";
+import { OPAClient } from "@open-policy-agent/opa";
+import { HTTPClient } from "@open-policy-agent/opa/lib/http";
 const httpClient = new HTTPClient({});
 httpClient.addHook("response", (response, request) => {
   console.group("Request Debugging");
@@ -470,7 +470,7 @@ console.log(allowed);
 
 #### Express
 
-In [the StyraInc/styra-demo-tickethub repository](https://github.com/StyraInc/styra-demo-tickethub/tree/main/server/node), you'll find a NodeJS backend service that is using `@styra/opa`:
+In [the StyraInc/styra-demo-tickethub repository](https://github.com/StyraInc/styra-demo-tickethub/tree/main/server/node), you'll find a NodeJS backend service that is using `@open-policy-agent/opa`:
 
 ```javascript
 router.get("/tickets/:id", [param("id").isInt().toInt()], async (req, res) => {
@@ -489,7 +489,7 @@ router.get("/tickets/:id", [param("id").isInt().toInt()], async (req, res) => {
 
 #### NestJS
 
-In [StyraInc/opa-sdk-demos/nestjs-demo](https://github.com/StyraInc/opa-sdk-demos/tree/main/nestjs-demo), we have an decorator-based API authorization example using `@styra/opa`:
+In [StyraInc/opa-sdk-demos/nestjs-demo](https://github.com/StyraInc/opa-sdk-demos/tree/main/nestjs-demo), we have an decorator-based API authorization example using `@open-policy-agent/opa`:
 
 ```ts
 @Controller("cats")
@@ -564,7 +564,7 @@ Some of the endpoints in this SDK support retries.  If you use the SDK without a
 To change the default retry strategy for a single API call, simply provide a retryConfig object to the call:
 
 ```typescript
-import { OpaApiClient } from "@styra/opa";
+import { OpaApiClient } from "@open-policy-agent/opa";
 
 const opaApiClient = new OpaApiClient();
 
@@ -593,7 +593,7 @@ run();
 If you'd like to override the default retry strategy for all operations that support retries, you can provide a retryConfig at SDK initialization:
 
 ```typescript
-import { OpaApiClient } from "@styra/opa";
+import { OpaApiClient } from "@open-policy-agent/opa";
 
 const opaApiClient = new OpaApiClient({
   retryConfig: {
@@ -634,7 +634,7 @@ This SDK supports the following security scheme globally:
 To authenticate with the API the `bearerAuth` parameter must be set when initializing the SDK client instance. For example:
 
 ```typescript
-import { OpaApiClient } from "@styra/opa";
+import { OpaApiClient } from "@open-policy-agent/opa";
 
 const opaApiClient = new OpaApiClient({
   bearerAuth: "<YOUR_BEARER_TOKEN_HERE>",
@@ -663,7 +663,7 @@ You can pass a logger that matches `console`'s interface as an SDK option.
 > Beware that debug logging will reveal secrets, like API tokens in headers, in log messages printed to a console or files. It's recommended to use this feature only during local development and not in production.
 
 ```typescript
-import { OpaApiClient } from "@styra/opa";
+import { OpaApiClient } from "@open-policy-agent/opa";
 
 const sdk = new OpaApiClient({ debugLogger: console });
 ```

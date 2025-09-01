@@ -5,7 +5,7 @@ Bad Request
 ## Example Usage
 
 ```typescript
-import { ClientError } from "@styra/opa/sdk/models/errors";
+import { ClientError } from "@open-policy-agent/opa/sdk/models/errors";
 
 // No examples available for this model
 ```

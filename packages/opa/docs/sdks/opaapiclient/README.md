@@ -21,7 +21,7 @@ Execute the default decision  given an input
 ### Example Usage
 
 ```typescript
-import { OpaApiClient } from "@styra/opa";
+import { OpaApiClient } from "@open-policy-agent/opa";
 
 const opaApiClient = new OpaApiClient();
 
@@ -40,8 +40,8 @@ run();
 The standalone function version of this method:
 
 ```typescript
-import { OpaApiClientCore } from "@styra/opa/core.js";
-import { executeDefaultPolicyWithInput } from "@styra/opa/funcs/executeDefaultPolicyWithInput.js";
+import { OpaApiClientCore } from "@open-policy-agent/opa/core.js";
+import { executeDefaultPolicyWithInput } from "@open-policy-agent/opa/funcs/executeDefaultPolicyWithInput.js";
 
 // Use `OpaApiClientCore` for best tree-shaking performance.
 // You can create one instance of it to use across an application.
@@ -93,7 +93,7 @@ Execute a policy
 ### Example Usage
 
 ```typescript
-import { OpaApiClient } from "@styra/opa";
+import { OpaApiClient } from "@open-policy-agent/opa";
 
 const opaApiClient = new OpaApiClient();
 
@@ -114,8 +114,8 @@ run();
 The standalone function version of this method:
 
 ```typescript
-import { OpaApiClientCore } from "@styra/opa/core.js";
-import { executePolicy } from "@styra/opa/funcs/executePolicy.js";
+import { OpaApiClientCore } from "@open-policy-agent/opa/core.js";
+import { executePolicy } from "@open-policy-agent/opa/funcs/executePolicy.js";
 
 // Use `OpaApiClientCore` for best tree-shaking performance.
 // You can create one instance of it to use across an application.
@@ -167,7 +167,7 @@ Execute a policy given an input
 ### Example Usage
 
 ```typescript
-import { OpaApiClient } from "@styra/opa";
+import { OpaApiClient } from "@open-policy-agent/opa";
 
 const opaApiClient = new OpaApiClient();
 
@@ -191,8 +191,8 @@ run();
 The standalone function version of this method:
 
 ```typescript
-import { OpaApiClientCore } from "@styra/opa/core.js";
-import { executePolicyWithInput } from "@styra/opa/funcs/executePolicyWithInput.js";
+import { OpaApiClientCore } from "@open-policy-agent/opa/core.js";
+import { executePolicyWithInput } from "@open-policy-agent/opa/funcs/executePolicyWithInput.js";
 
 // Use `OpaApiClientCore` for best tree-shaking performance.
 // You can create one instance of it to use across an application.
@@ -247,7 +247,7 @@ Execute a policy given a batch of inputs
 ### Example Usage
 
 ```typescript
-import { OpaApiClient } from "@styra/opa";
+import { OpaApiClient } from "@open-policy-agent/opa";
 
 const opaApiClient = new OpaApiClient();
 
@@ -273,8 +273,8 @@ run();
 The standalone function version of this method:
 
 ```typescript
-import { OpaApiClientCore } from "@styra/opa/core.js";
-import { executeBatchPolicyWithInput } from "@styra/opa/funcs/executeBatchPolicyWithInput.js";
+import { OpaApiClientCore } from "@open-policy-agent/opa/core.js";
+import { executeBatchPolicyWithInput } from "@open-policy-agent/opa/funcs/executeBatchPolicyWithInput.js";
 
 // Use `OpaApiClientCore` for best tree-shaking performance.
 // You can create one instance of it to use across an application.
@@ -331,7 +331,7 @@ Partially evaluate a query
 ### Example Usage
 
 ```typescript
-import { OpaApiClient } from "@styra/opa";
+import { OpaApiClient } from "@open-policy-agent/opa";
 
 const opaApiClient = new OpaApiClient();
 
@@ -357,8 +357,8 @@ run();
 The standalone function version of this method:
 
 ```typescript
-import { OpaApiClientCore } from "@styra/opa/core.js";
-import { compileQueryWithPartialEvaluation } from "@styra/opa/funcs/compileQueryWithPartialEvaluation.js";
+import { OpaApiClientCore } from "@open-policy-agent/opa/core.js";
+import { compileQueryWithPartialEvaluation } from "@open-policy-agent/opa/funcs/compileQueryWithPartialEvaluation.js";
 
 // Use `OpaApiClientCore` for best tree-shaking performance.
 // You can create one instance of it to use across an application.
@@ -415,7 +415,7 @@ The health API endpoint executes a simple built-in policy query to verify that t
 ### Example Usage
 
 ```typescript
-import { OpaApiClient } from "@styra/opa";
+import { OpaApiClient } from "@open-policy-agent/opa";
 
 const opaApiClient = new OpaApiClient();
 
@@ -434,8 +434,8 @@ run();
 The standalone function version of this method:
 
 ```typescript
-import { OpaApiClientCore } from "@styra/opa/core.js";
-import { health } from "@styra/opa/funcs/health.js";
+import { OpaApiClientCore } from "@open-policy-agent/opa/core.js";
+import { health } from "@open-policy-agent/opa/funcs/health.js";
 
 // Use `OpaApiClientCore` for best tree-shaking performance.
 // You can create one instance of it to use across an application.

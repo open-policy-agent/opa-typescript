@@ -3,7 +3,7 @@
 ## Example Usage
 
 ```typescript
-import { CompileQueryWithPartialEvaluationRequest } from "@styra/opa/sdk/models/operations";
+import { CompileQueryWithPartialEvaluationRequest } from "@open-policy-agent/opa/sdk/models/operations";
 
 let value: CompileQueryWithPartialEvaluationRequest = {
   path: "app/rbac",
