@@ -1,14 +1,14 @@
 # OPA Typescript SDK
 
-The Styra-supported driver to connect to Open Policy Agent (OPA) and Enterprise OPA deployments.
+Driver to connect to Open Policy Agent (OPA) and EOPA deployments.
 
 [![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
-[![NPM Version](https://img.shields.io/npm/v/%40styra%2Fopa?style=flat&color=%2324b6e0)](https://www.npmjs.com/package/@open-policy-agent/opa)
+[![NPM Version](https://img.shields.io/npm/v/%40open-policy-agent%2Fopa?style=flat&color=%2324b6e0)](https://www.npmjs.com/package/@open-policy-agent/opa)
 [![JSR](https://jsr.io/badges/@open-policy-agent/opa)](https://jsr.io/@open-policy-agent/opa)
 
-> Reference documentation available at <https://styrainc.github.io/opa-typescript>
+> Reference documentation available at <https://open-policy-agent.github.io/opa-typescript>
 
-You can use the Styra OPA SDK to connect to [Open Policy Agent](https://www.openpolicyagent.org/) and [Enterprise OPA](https://www.styra.com/enterprise-opa/) deployments.
+You can use the OPA SDK to connect to [Open Policy Agent](https://www.openpolicyagent.org/) and [EOPA](https://github.com/open-policy-agent/eopa) deployments.
 
 ## SDK Installation
 
@@ -470,7 +470,7 @@ console.log(allowed);
 
 #### Express
 
-In [the StyraInc/styra-demo-tickethub repository](https://github.com/StyraInc/styra-demo-tickethub/tree/main/server/node), you'll find a NodeJS backend service that is using `@open-policy-agent/opa`:
+In [the StyraOSS/styra-demo-tickethub repository](https://github.com/StyraOSS/styra-demo-tickethub/tree/main/server/node), you'll find a NodeJS backend service that is using `@open-policy-agent/opa`:
 
 ```javascript
 router.get("/tickets/:id", [param("id").isInt().toInt()], async (req, res) => {
