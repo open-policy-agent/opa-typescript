@@ -1,7 +1,7 @@
-# @styra/ucast-prisma
+# @open-policy-agent/ucast-prisma
 
 [![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
-[![NPM Version](https://img.shields.io/npm/v/%40styra%2Fucast-prisma?style=flat&color=%2324b6e0)](https://www.npmjs.com/package/@styra/ucast-prisma)
+[![NPM Version](https://img.shields.io/npm/v/%40open-policy-agent%2Fucast-prisma?style=flat&color=%2324b6e0)](https://www.npmjs.com/package/@open-policy-agent/ucast-prisma)
 
 This package contains helpers for using UCAST conditions with Prisma queries.
 
@@ -9,8 +9,7 @@ This package contains helpers for using UCAST conditions with Prisma queries.
 ## Usage
 
 This package can be used to add filtering to Prisma queries from UCAST conditions.
-The conditions returned by the [Enterprise OPA Compile API](https://docs.styra.com/enterprise-opa/reference/api-reference/partial-evaluation-api)
-look like this:
+The conditions returned by the [EOPA](https://github.com/open-policy-agent/eopa) Compile API look like this:
 
 ```json
 {
@@ -81,5 +80,4 @@ via `mask(maskRules, obj, "tickets")`, masking the appropriate fields.
 
 ## Community
 
-For questions, discussions and announcements related to Styra products, services and open source projects, please join
-the Styra community on [Slack](https://communityinviter.com/apps/styracommunity/signup)!
+For questions, discussions and announcements related to this project, please join Slack!

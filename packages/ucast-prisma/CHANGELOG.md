@@ -1,4 +1,4 @@
-# @styra/ucast-prisma
+# @open-policy-agent/ucast-prisma
 
 ## 0.1.5
 

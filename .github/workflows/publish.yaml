@@ -65,28 +65,6 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
 
-      - name: Process results
-        id: opa_pkg
-        run: |
-          echo "tag=$(jq -nr --argjson pkgs $PP '$pkgs[] | select(.name == "@open-policy-agent/opa") | (.name + "@" + .version)')" >> $GITHUB_OUTPUT
-          echo "included=$(jq -nr --argjson pkgs $PP '$pkgs[] | select(.name == "@open-policy-agent/opa") | true')" >> $GITHUB_OUTPUT
-          echo "version=$(jq -nr --argjson pkgs $PP '$pkgs[] | select(.name == "@open-policy-agent/opa") | .version')" >> $GITHUB_OUTPUT
-        env:
-          PP: ${{ steps.changesets.outputs.publishedPackages }}
-
-      - name: Generate @open-policy-agent/opa GH release notes
-        run: build/opa-release-notes.sh > OPA_RELEASE_NOTES.md
-        if: steps.opa_pkg.outputs.included == 'true'
-        env:
-          VERSION: ${{ steps.opa_pkg.outputs.version }}
-
-      - name: Create @open-policy-agent/opa GH release
-        uses: softprops/action-gh-release@72f2c25fcb47643c292f7107632f7a47c1df5cd8 # v2.3.2
-        if: steps.opa_pkg.outputs.included == 'true'
-        with:
-          body_path: OPA_RELEASE_NOTES.md
-          tag_name: ${{ steps.opa_pkg.outputs.tag }}
-
   docs:
     name: Publish Docs
     needs:
