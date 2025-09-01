@@ -4,7 +4,7 @@ module.exports = {
   hideGenerator: true,
   navigationLinks: {
     NPM: "https://www.npmjs.com/package/@open-policy-agent/opa",
-    GitHub: "https://github.com/StyraInc/opa-typescript",
+    GitHub: "https://github.com/open-policy-agent/opa-typescript",
   },
   entryPoints: [
     "./src",
