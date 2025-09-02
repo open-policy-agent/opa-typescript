@@ -2,7 +2,7 @@
   "name": "opa-typescript",
   "scripts": {
     "publish": "npm run build --ws && changeset publish",
-    "docs": "typedoc"
+    "docs": "typedoc --favicon .typedoc/favicon.ico"
   },
   "private": true,
   "workspaces": [
