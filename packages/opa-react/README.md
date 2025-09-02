@@ -39,7 +39,7 @@ import { OPAClient } from "@open-policy-agent/opa";
 
 Then instantiate an `OPAClient` that is able to reach your OPA server, and pass that along to `<AuthzProvider>`:
 
-```jsx
+```tsx
 const serverURL = "https://opa.internal";
 
 export default function App() {
@@ -90,7 +90,7 @@ The `<Authz>` component provides a high-level approach to letting your UI react 
 
 For example, to disable a button based on the outcome of a policy evaluation of `data.things.allow` with input `{"action": "delete", "resource": "thing"}`, you would add this to your JSX:
 
-```jsx
+```tsx
 <Authz
   path="things/allow"
   input={{ action: "delete", resource: "thing" }}
@@ -119,7 +119,7 @@ If it is insufficient for your use case, you can reach to `useAuthz` for more co
 In the example above, we had to define `<button>` twice: once for when the user is authorized, and as `fallback` when they are not.
 We can avoid this by using `useAuthz`:
 
-```jsx
+```tsx
 export default function MyComponent() {
   const { result: allowed, isLoading } = useAuthz("things/allow", {
     action: "delete",
