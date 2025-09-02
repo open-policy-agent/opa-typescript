@@ -1,6 +1,8 @@
 {
   "$schema": "https://typedoc.org/schema.json",
-  "entryPoints": ["packages/*"],
+  "entryPoints": [
+    "packages/*"
+  ],
   "name": "Open Policy Agent TypeScript Packages",
   "entryPointStrategy": "packages",
   "includeVersion": false,
@@ -8,5 +10,19 @@
   "navigationLinks": {
     "GitHub": "https://github.com/open-policy-agent/opa-typescript"
   },
-  "plugin": ["typedoc-plugin-replace-text", "typedoc-plugin-extras"]
+  "highlightLanguages": [
+    "bash",
+    "console",
+    "css",
+    "html",
+    "javascript",
+    "json",
+    "sql",
+    "tsx",
+    "typescript"
+  ],
+  "plugin": [
+    "typedoc-plugin-replace-text",
+    "typedoc-plugin-extras"
+  ]
 }
