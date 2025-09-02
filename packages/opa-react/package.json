@@ -1,6 +1,6 @@
 {
   "name": "@open-policy-agent/opa-react",
-  "version": "0.7.0",
+  "version": "0.7.1",
   "repository": {
     "type": "git",
     "url": "https://github.com/open-policy-agent/opa-typescript.git",
@@ -38,7 +38,7 @@
     "react": ">=18.0.0"
   },
   "dependencies": {
-    "@open-policy-agent/opa": ">=1.5.0",
+    "@open-policy-agent/opa": ">=1.7.11",
     "@tanstack/react-query": "^5.74.7",
     "@yornaath/batshit": "^0.10.1",
     "lodash.merge": "^4.6.2",
