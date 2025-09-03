@@ -52,7 +52,7 @@
     "globals": "^15.14.0",
     "testcontainers": "^11.5.1",
     "tshy": "^2.0.0",
-    "tsx": "^4.19.3",
+    "tsx": "^4.20.5",
     "typedoc": "^0.28.11",
     "typedoc-plugin-extras": "^4.0.1",
     "typedoc-plugin-replace-text": "^4.2.0",
