@@ -56,7 +56,7 @@
     "typedoc": "^0.28.11",
     "typedoc-plugin-extras": "^4.0.1",
     "typedoc-plugin-replace-text": "^4.2.0",
-    "typescript": "^5.4.5",
+    "typescript": "^5.9.2",
     "typescript-eslint": "^8.22.0",
     "zod": "^4.1.5"
   },
