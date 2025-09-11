@@ -58,7 +58,7 @@
     "typedoc-plugin-replace-text": "^4.2.0",
     "typescript": "^5.9.2",
     "typescript-eslint": "^8.42.0",
-    "zod": "^4.1.5"
+    "zod": "^4.1.8"
   },
   "dependencies": {
     "@open-policy-agent/ucast-prisma": "^0.1.6"
