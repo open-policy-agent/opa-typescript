@@ -43,7 +43,7 @@ yarn add @open-policy-agent/opa zod
 <!-- Start Summary [summary] -->
 ## Summary
 
-For more information about the API: [Enterprise OPA documentation](https://docs.styra.com/enterprise-opa)
+For more information about the API: [OpenAPI definition](https://github.com/open-policy-agent/eopa/tree/main/openapi)
 <!-- End Summary [summary] -->
 
 <!-- Start Table of Contents [toc] -->
@@ -489,7 +489,7 @@ router.get("/tickets/:id", [param("id").isInt().toInt()], async (req, res) => {
 
 #### NestJS
 
-In [StyraInc/opa-sdk-demos/nestjs-demo](https://github.com/StyraInc/opa-sdk-demos/tree/main/nestjs-demo), we have an decorator-based API authorization example using `@open-policy-agent/opa`:
+In [opa-sdk-demos/nestjs-demo](https://github.com/open-policy-agent/opa-sdk-demos/tree/main/nestjs-demo), we have an decorator-based API authorization example using `@open-policy-agent/opa`:
 
 ```ts
 @Controller("cats")
@@ -517,7 +517,7 @@ export class CatsController {
 }
 ```
 
-Please refer to [the repository's README.md](https://github.com/StyraInc/opa-sdk-demos/tree/main/nestjs-demo) for more details.
+Please refer to [the repository's README.md](https://github.com/open-policy-agent/opa-sdk-demos/tree/main/nestjs-demo) for more details.
 
 > [!NOTE]
 > For low-level SDK usage, see the sections below.
@@ -698,5 +698,4 @@ To read more about standalone functions, check [FUNCTIONS.md](./FUNCTIONS.md).
 
 ## Community
 
-For questions, discussions and announcements related to Styra products, services and open source projects, please join
-the Styra community on [Slack](https://communityinviter.com/apps/styracommunity/signup)!
+If there's something you'd like to have added to the roadmap, either open an issue, or reach out in the community Slack!
