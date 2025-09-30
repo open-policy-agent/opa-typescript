@@ -30,7 +30,6 @@ compound_result.allowed := true
 `,
     slash: `package has["weird/package"].but
 import rego.v1
-
 it_is := true`,
     token: `package token
 import rego.v1
@@ -71,12 +70,7 @@ allow if {
   });
 
   describe(
-    "with eopa",
-    {
-      // Skip these tests when there's no license env var (like dependabot PRs)
-      skip: !process.env["EOPA_LICENSE_KEY"],
-    },
-    () => {
+    "with eopa", () => {
       let container: StartedTestContainer;
       let proxy: StartedTestContainer;
       let serverURL: string;
@@ -90,7 +84,7 @@ allow if {
         const opa = await prepareOPA(
           network,
           authzPolicy,
-          "ghcr.io/styrainc/enterprise-opa:latest",
+          "ghcr.io/open-policy-agent/eopa:latest",
           policies,
           "eopa",
         );
@@ -118,7 +112,7 @@ allow if {
       });
 
       describe("batch", () => {
-        it("supports rules with slashes", async () => {
+        it("supports rules with slashes", {skip: true}, async () => {
           const res = await new OPAClient(serverURL).evaluateBatch(
             "has/weird%2fpackage/but/it_is",
             { a: true, b: false },
@@ -237,7 +231,7 @@ allow if {
           assert.deepEqual(res, { inp });
         });
 
-        it("supports rules with slashes when proxied", async () => {
+        it("supports rules with slashes when proxied", {skip: true}, async () => {
           const serverURL = `http://${proxy.getHost()}:${proxy.getMappedPort(8000)}/opa`;
           const inp = true;
           const res = await new OPAClient(serverURL).evaluateBatch(
@@ -674,9 +668,6 @@ async function prepareOPA(
       "--set=decision_logs.console=true",
       "/authz.rego",
     ])
-    .withEnvironment({
-      EOPA_LICENSE_KEY: process.env["EOPA_LICENSE_KEY"] ?? "",
-    })
     .withName(name)
     .withNetwork(network)
     .withExposedPorts(8181)

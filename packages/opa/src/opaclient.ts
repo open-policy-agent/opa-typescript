@@ -163,23 +163,23 @@ export type TargetOptions = Record<"ucastPrisma", PrismaOptions>; // | Record<"u
 
 const CompileTargets = {
   multi:
-    CompileQueryWithPartialEvaluationAcceptEnum.applicationVndStyraMultitargetPlusJson,
+    CompileQueryWithPartialEvaluationAcceptEnum.applicationVndOpaMultitargetPlusJson,
   mysql:
-    CompileQueryWithPartialEvaluationAcceptEnum.applicationVndStyraSqlMysqlPlusJson,
+    CompileQueryWithPartialEvaluationAcceptEnum.applicationVndOpaSqlMysqlPlusJson,
   postgresql:
-    CompileQueryWithPartialEvaluationAcceptEnum.applicationVndStyraSqlPostgresqlPlusJson,
+    CompileQueryWithPartialEvaluationAcceptEnum.applicationVndOpaSqlPostgresqlPlusJson,
   sqlserver:
-    CompileQueryWithPartialEvaluationAcceptEnum.applicationVndStyraSqlSqlserverPlusJson,
+    CompileQueryWithPartialEvaluationAcceptEnum.applicationVndOpaSqlSqlserverPlusJson,
   sqlite:
-    CompileQueryWithPartialEvaluationAcceptEnum.applicationVndStyraSqlSqlitePlusJson,
+    CompileQueryWithPartialEvaluationAcceptEnum.applicationVndOpaSqlSqlitePlusJson,
   ucastALL:
-    CompileQueryWithPartialEvaluationAcceptEnum.applicationVndStyraUcastAllPlusJson,
+    CompileQueryWithPartialEvaluationAcceptEnum.applicationVndOpaUcastAllPlusJson,
   ucastLinq:
-    CompileQueryWithPartialEvaluationAcceptEnum.applicationVndStyraUcastLinqPlusJson,
+    CompileQueryWithPartialEvaluationAcceptEnum.applicationVndOpaUcastLinqPlusJson,
   ucastMinimal:
-    CompileQueryWithPartialEvaluationAcceptEnum.applicationVndStyraUcastMinimalPlusJson,
+    CompileQueryWithPartialEvaluationAcceptEnum.applicationVndOpaUcastMinimalPlusJson,
   ucastPrisma:
-    CompileQueryWithPartialEvaluationAcceptEnum.applicationVndStyraUcastPrismaPlusJson,
+    CompileQueryWithPartialEvaluationAcceptEnum.applicationVndOpaUcastPrismaPlusJson,
 } as const;
 
 const shortNameMap: Record<SingleTarget, TargetDialects> = {

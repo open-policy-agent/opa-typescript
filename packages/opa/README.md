@@ -290,15 +290,15 @@ bob: denied!
 
 ## Get Filters
 
-To use the translation of Rego data filter policies into SQL or UCAST expressions, you need to use Enterprise OPA.
-These examples assume you run Enterprise OPA with the following Rego policy:
+To use the translation of Rego data filter policies into SQL or UCAST expressions, you need to use a recent version of OPA (>=v1.9.0) or EOPA (>=v1.44.0).
+These examples assume you run OPA or EOPA with the following Rego policy:
 
 ```rego
 package filters
 
 # METADATA
 # scope: document
-# custom:
+# compile:
 #   unknowns: ["input.fruits"]
 #   mask_rule: masks
 include if input.fruits.colour in input.fav_colours
