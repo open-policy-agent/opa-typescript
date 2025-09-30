@@ -130,7 +130,7 @@ async function $do(
   const headers = new Headers(compactMap({
     "Content-Type": "application/json",
     Accept: options?.acceptHeaderOverride
-      || "application/json;q=1, application/vnd.opa.multitarget+json;q=0.90, application/vnd.opa.sql.mysql+json;q=0.80, application/vnd.opa.sql.postgresql+json;q=0.70, application/vnd.opa.sql.sqlite+json;q=0.60, application/vnd.opa.sql.sqlserver+json;q=0.50, application/vnd.opa.ucast.all+json;q=0.40, application/vnd.opa.ucast.linq+json;q=0.30, application/vnd.opa..opa.cast.minimal+json;q=0.20, application/vnd.opa.ucast.prisma+json;q=0",
+      || "application/json;q=1, application/vnd.opa.multitarget+json;q=0.90, application/vnd.opa.sql.mysql+json;q=0.80, application/vnd.opa.sql.postgresql+json;q=0.70, application/vnd.opa.sql.sqlite+json;q=0.60, application/vnd.opa.sql.sqlserver+json;q=0.50, application/vnd.opa.ucast.all+json;q=0.40, application/vnd.opa.ucast.linq+json;q=0.30, application/vnd.opa.ucast.minimal+json;q=0.20, application/vnd.opa.ucast.prisma+json;q=0",
     "Accept-Encoding": encodeSimple(
       "Accept-Encoding",
       payload["Accept-Encoding"],
