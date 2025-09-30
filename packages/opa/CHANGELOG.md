@@ -1,5 +1,14 @@
 # @open-policy-agent/opa
 
+## 2.0.0
+
+### Major Changes
+
+- 3e06fa0: Support for Compile API filter generation in OPA v1.9.0 (EOPA v1.44.0).
+
+  - [OPA v1.9.0](https://github.com/open-policy-agent/opa/releases/tag/v1.9.0)
+  - [EOPA v1.44.0](https://github.com/open-policy-agent/eopa/releases/tag/v1.44.0)
+
 ## 1.7.11
 
 ### Patch Changes
