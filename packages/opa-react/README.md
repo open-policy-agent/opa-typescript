@@ -1,7 +1,7 @@
 # @open-policy-agent/opa-react
 
 [![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
-[![NPM Version](https://img.shields.io/npm/v/%40styra%2Fopa-react?style=flat&color=%2324b6e0)](https://www.npmjs.com/package/@open-policy-agent/opa-react)
+[![NPM Version](https://img.shields.io/npm/v/%40open-policy-agent%2Fopa-react?style=flat&color=%2324b6e0)](https://www.npmjs.com/package/@open-policy-agent/opa-react)
 
 This package contains helpers for using [@open-policy-agent/opa](https://www.npmjs.com/package/@open-policy-agent/opa) from React.
 

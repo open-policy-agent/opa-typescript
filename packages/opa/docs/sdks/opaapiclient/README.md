@@ -2,8 +2,8 @@
 
 ## Overview
 
-Enterprise OPA documentation
-<https://docs.styra.com/enterprise-opa>
+OPA documentation
+<https://www.openpolicyagent.org/docs>
 
 ### Available Operations
 
