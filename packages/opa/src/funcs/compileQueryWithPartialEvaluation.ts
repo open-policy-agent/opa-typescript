@@ -26,22 +26,22 @@ import { Result } from "../types/fp.js";
 
 export enum CompileQueryWithPartialEvaluationAcceptEnum {
   applicationJson = "application/json",
-  applicationVndStyraMultitargetPlusJson =
-    "application/vnd.styra.multitarget+json",
-  applicationVndStyraSqlMysqlPlusJson = "application/vnd.styra.sql.mysql+json",
-  applicationVndStyraSqlPostgresqlPlusJson =
-    "application/vnd.styra.sql.postgresql+json",
-  applicationVndStyraSqlSqlitePlusJson =
-    "application/vnd.styra.sql.sqlite+json",
-  applicationVndStyraSqlSqlserverPlusJson =
-    "application/vnd.styra.sql.sqlserver+json",
-  applicationVndStyraUcastAllPlusJson = "application/vnd.styra.ucast.all+json",
-  applicationVndStyraUcastLinqPlusJson =
-    "application/vnd.styra.ucast.linq+json",
-  applicationVndStyraUcastMinimalPlusJson =
-    "application/vnd.styra.ucast.minimal+json",
-  applicationVndStyraUcastPrismaPlusJson =
-    "application/vnd.styra.ucast.prisma+json",
+  applicationVndOpaMultitargetPlusJson =
+    "application/vnd.opa.multitarget+json",
+  applicationVndOpaSqlMysqlPlusJson = "application/vnd.opa.sql.mysql+json",
+  applicationVndOpaSqlPostgresqlPlusJson =
+    "application/vnd.opa.sql.postgresql+json",
+  applicationVndOpaSqlSqlitePlusJson =
+    "application/vnd.opa.sql.sqlite+json",
+  applicationVndOpaSqlSqlserverPlusJson =
+    "application/vnd.opa.sql.sqlserver+json",
+  applicationVndOpaUcastAllPlusJson = "application/vnd.opa.ucast.all+json",
+  applicationVndOpaUcastLinqPlusJson =
+    "application/vnd.opa.ucast.linq+json",
+  applicationVndOpaUcastMinimalPlusJson =
+    "application/vnd.opa.ucast.minimal+json",
+  applicationVndOpaUcastPrismaPlusJson =
+    "application/vnd.opa.ucast.prisma+json",
 }
 
 /**
@@ -130,7 +130,7 @@ async function $do(
   const headers = new Headers(compactMap({
     "Content-Type": "application/json",
     Accept: options?.acceptHeaderOverride
-      || "application/json;q=1, application/vnd.styra.multitarget+json;q=0.90, application/vnd.styra.sql.mysql+json;q=0.80, application/vnd.styra.sql.postgresql+json;q=0.70, application/vnd.styra.sql.sqlite+json;q=0.60, application/vnd.styra.sql.sqlserver+json;q=0.50, application/vnd.styra.ucast.all+json;q=0.40, application/vnd.styra.ucast.linq+json;q=0.30, application/vnd.styra.ucast.minimal+json;q=0.20, application/vnd.styra.ucast.prisma+json;q=0",
+      || "application/json;q=1, application/vnd.opa.multitarget+json;q=0.90, application/vnd.opa.sql.mysql+json;q=0.80, application/vnd.opa.sql.postgresql+json;q=0.70, application/vnd.opa.sql.sqlite+json;q=0.60, application/vnd.opa.sql.sqlserver+json;q=0.50, application/vnd.opa.ucast.all+json;q=0.40, application/vnd.opa.ucast.linq+json;q=0.30, application/vnd.opa.ucast.minimal+json;q=0.20, application/vnd.opa.ucast.prisma+json;q=0",
     "Accept-Encoding": encodeSimple(
       "Accept-Encoding",
       payload["Accept-Encoding"],
@@ -212,7 +212,7 @@ async function $do(
       200,
       operations.CompileQueryWithPartialEvaluationResponse$inboundSchema,
       {
-        ctype: "application/vnd.styra.multitarget+json",
+        ctype: "application/vnd.opa.multitarget+json",
         key: "CompileResultMultitarget",
       },
     ),
@@ -220,7 +220,7 @@ async function $do(
       200,
       operations.CompileQueryWithPartialEvaluationResponse$inboundSchema,
       {
-        ctype: "application/vnd.styra.ucast.all+json",
+        ctype: "application/vnd.opa.ucast.all+json",
         key: "CompileResultUCAST",
       },
     ),
@@ -228,7 +228,7 @@ async function $do(
       200,
       operations.CompileQueryWithPartialEvaluationResponse$inboundSchema,
       {
-        ctype: "application/vnd.styra.ucast.linq+json",
+        ctype: "application/vnd.opa.ucast.linq+json",
         key: "CompileResultUCAST",
       },
     ),
@@ -236,7 +236,7 @@ async function $do(
       200,
       operations.CompileQueryWithPartialEvaluationResponse$inboundSchema,
       {
-        ctype: "application/vnd.styra.ucast.minimal+json",
+        ctype: "application/vnd.opa.ucast.minimal+json",
         key: "CompileResultUCAST",
       },
     ),
@@ -244,7 +244,7 @@ async function $do(
       200,
       operations.CompileQueryWithPartialEvaluationResponse$inboundSchema,
       {
-        ctype: "application/vnd.styra.ucast.prisma+json",
+        ctype: "application/vnd.opa.ucast.prisma+json",
         key: "CompileResultUCAST",
       },
     ),
@@ -252,7 +252,7 @@ async function $do(
       200,
       operations.CompileQueryWithPartialEvaluationResponse$inboundSchema,
       {
-        ctype: "application/vnd.styra.sql.mysql+json",
+        ctype: "application/vnd.opa.sql.mysql+json",
         key: "CompileResultSQL",
       },
     ),
@@ -260,7 +260,7 @@ async function $do(
       200,
       operations.CompileQueryWithPartialEvaluationResponse$inboundSchema,
       {
-        ctype: "application/vnd.styra.sql.postgresql+json",
+        ctype: "application/vnd.opa.sql.postgresql+json",
         key: "CompileResultSQL",
       },
     ),
@@ -268,7 +268,7 @@ async function $do(
       200,
       operations.CompileQueryWithPartialEvaluationResponse$inboundSchema,
       {
-        ctype: "application/vnd.styra.sql.sqlite+json",
+        ctype: "application/vnd.opa.sql.sqlite+json",
         key: "CompileResultSQL",
       },
     ),
@@ -276,7 +276,7 @@ async function $do(
       200,
       operations.CompileQueryWithPartialEvaluationResponse$inboundSchema,
       {
-        ctype: "application/vnd.styra.sql.sqlserver+json",
+        ctype: "application/vnd.opa.sql.sqlserver+json",
         key: "CompileResultSQL",
       },
     ),

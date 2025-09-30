@@ -12,7 +12,7 @@ describe("compile-api", async () => {
     filters: `package filters
 # METADATA
 # scope: document
-# custom:
+# compile:
 #   unknowns: [input.fruits]
 #   mask_rule: data.filters.mask
 include if input.fruits.colour in input.fav_colours
@@ -33,7 +33,7 @@ include if {
     filters_extra_masks: `package filters_extra_masks
 # METADATA
 # scope: document
-# custom:
+# compile:
 #   unknowns: [input.fruits]
 #   mask_rule: data.filters_extra_masks.mask
 include if input.fruits.colour in input.fav_colours
@@ -48,12 +48,7 @@ mask.owner.phone.replace.value := "000-000"
   };
 
   describe(
-    "with eopa",
-    {
-      // Skip these tests when there's no license env var (like dependabot PRs)
-      skip: !process.env["EOPA_LICENSE_KEY"],
-    },
-    () => {
+    "with eopa", () => {
       let container: StartedTestContainer;
       let serverURL: string;
 
@@ -63,7 +58,7 @@ mask.owner.phone.replace.value := "000-000"
 
       before(async () => {
         const opa = await prepareOPA(
-          "ghcr.io/styrainc/enterprise-opa:edge",
+          "ghcr.io/open-policy-agent/eopa:latest",
           policies,
         );
         container = opa.container;
@@ -314,7 +309,7 @@ mask.owner.phone.replace.value := "000-000"
               },
               {
                 acceptHeaderOverride:
-                  CompileQueryWithPartialEvaluationAcceptEnum.applicationVndStyraSqlPostgresqlPlusJson,
+                  CompileQueryWithPartialEvaluationAcceptEnum.applicationVndOpaSqlPostgresqlPlusJson,
               },
             );
             if (!res.ok) {
@@ -351,9 +346,6 @@ async function prepareOPA(
       "--log-level=debug",
       "--set=decision_logs.console=true",
     ])
-    .withEnvironment({
-      EOPA_LICENSE_KEY: process.env["EOPA_LICENSE_KEY"] ?? "",
-    })
     .withExposedPorts(8181)
     .withWaitStrategy(Wait.forHttp("/health", 8181).forStatusCode(200))
     .start();
