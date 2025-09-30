@@ -1,6 +1,6 @@
 {
   "name": "@open-policy-agent/opa",
-  "version": "1.7.11",
+  "version": "2.0.0",
   "author": "The OPA Authors",
   "publishConfig": {
     "access": "public"
